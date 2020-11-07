@@ -3,7 +3,7 @@ import moment from 'moment';
 
 import {Button} from 'react-bootstrap';
 
-
+import Digit from './../reusable/Digits/Digit';
 
 import './Banner.css';
 
@@ -11,7 +11,7 @@ const Banner = () => {
     const [time, setTime] = useState(new Date());
 
     useEffect(() => {
-        
+
     }, [])
 
     return (
@@ -23,7 +23,9 @@ const Banner = () => {
                 <Button id="register">REGISTER</Button>
             </div>
             <div className="countdown">
-
+                <Digit />
+                <Digit />
+                <Digit />
             </div>
             
         </div>

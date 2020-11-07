@@ -1,0 +1,30 @@
+/*
+        <div className="digits-cont"> 
+            <div className="digit-cont">
+                <h3 className="digit">
+                    0        
+                </h3>
+            </div>
+            <div className="digit-cont">
+                <h3 className="digit">
+                    1
+                </h3>
+            </div>
+        </div>
+*/
+
+.digits-cont {
+    color: white;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 1em;
+}
+
+.digit-cont {
+    margin: 0 0.25em;
+    border: 1px solid white;
+    min-height: 200px;
+    max-width: 120px;
+}
