@@ -13,18 +13,57 @@
         </div>
 */
 
+
 .digits-cont {
+    justify-self: center;
+    /* grid-area: digit; */
     color: white;
     display: grid;
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin: 0 1em;
+    margin: 1em 1em;
 }
 
 .digit-cont {
-    margin: 0 0.25em;
-    border: 1px solid white;
-    min-height: 200px;
-    max-width: 120px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0.1rem 0.5em;
+    height: 10rem;
+    width: 8rem;
+    /* max-width: 120px; */
+
+    background: rgba(254,106,180,1);
+    border: 9px solid rgba(254, 72, 235, 1);
+    box-shadow: 0 0 15px rgba(11,254,205,1);
+
+    transition: height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.digit {
+    font-size: 5rem;
+    transform: scale(1, 1.25);
+}
+
+@media (max-width: 1200px) {
+    .digit-cont {
+        width: 7rem;
+        transition: width 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+
+@media (max-width: 900px) {
+    .digit-cont {
+        display: flex;
+        height: 6rem;
+        align-content: center;
+        transition: height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .digit {
+        font-size: 3rem;
+        height: min-content;
+        /* transform: scale(1, 1.25); */
+    }
 }

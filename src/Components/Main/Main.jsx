@@ -1,8 +1,8 @@
 import React from 'react';
 
-import About from '../About/About'
-import Banner from '../Banner/Banner'
-import FAQ from '../FAQ/FAQ'
+import About from '../About/About';
+import Banner from '../Banner/Banner';
+import FAQ from '../FAQ/FAQ';
 import Paths from '../Paths/Paths'
 import RegForm from '../RegistrationForm/RegForm.jsx'
 import Schedule from '../Schedule/Schedule'
@@ -13,9 +13,10 @@ const Main = () => {
     return (
         <div className="main">
             <Banner/>
-            {/* <About/>
+            <About/>
             <FAQ/>
-            <Paths/>
+            <Schedule />
+            {/* <Paths/>
             <RegForm/>
             <Schedule/> */}
         </div>
