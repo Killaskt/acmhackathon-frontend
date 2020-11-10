@@ -1,0 +1,117 @@
+.reg-form {
+    background: url('./../../res/Web 1920 – 1.png');
+    /* background-position: center; */
+    background-size: 30%;  
+    height: auto;
+    display: grid;
+}
+
+.registration {
+    justify-self: center;
+    align-self: center;
+    min-width: 50%;
+    /* height: 60vh; */
+    margin: 5rem;
+    background-color: azure;
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    grid-template-rows: 1fr;
+    background: rgba(20, 45, 96, 1);
+
+}
+
+.left {
+    display: grid;
+    border-right: 1px solid black;
+    background: #05022B;
+    align-items: center;
+}
+
+.Hlogo {
+    height: 100%;
+    /* width: auto; */
+    background: url('./../../res/logo_w_ontop.png') no-repeat;
+    background-position: center;
+    background-size: 101%;    
+    /* justify-self: flex-end; */
+}
+
+.right {
+    padding: 2rem;
+    background: rgba(20, 45, 96, 1);
+
+    color: rgba(28, 209, 220, 1);
+}
+
+.form-cont {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+}
+
+.reg-input {
+    margin: .5rem 0;
+    padding-left: 0.5rem;
+
+    color: rgba(28, 209, 220, 1);
+    background: rgba(170, 94, 207, 1);
+    border: 5px solid rgba(131, 75, 196, 1);
+    box-shadow: 0px 0 6px rgba(28, 209, 220, 1);
+}
+
+.reg-input::placeholder {
+    color: rgba(28, 209, 220, 1);
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+}
+
+.reg-input:required:valid {
+    border-color: green;
+    text-shadow: 1px 2px 2px rgba(0,0,0,1);
+}
+.reg-input:invalid {
+    border-color: red;
+    text-shadow: 1px 2px 2px rgba(0,0,0,1);
+  }
+  .reg-input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+    background-size: 25px;
+  }
+  .reg-input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+  }
+
+  .reg-input::-webkit-autofill {
+    background: brown;
+  }
+
+.name {
+    color: rgba(28, 209, 220, 1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.reg-input:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.randomteam {
+    margin: 0;
+    padding: 0;
+    width: 3.5rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+    .reg-form {
+        background-size: 100%;  
+        height: auto;
+    }
+    .left {
+        display: none;
+    }
+} 

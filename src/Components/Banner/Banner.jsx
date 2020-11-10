@@ -7,10 +7,12 @@ import Digit from './../reusable/Digits/Digit';
 
 import './Banner.css';
 
-const Banner = () => {
+const Banner = (props) => {
     const [time, setTime] = useState(new Date());
     const [event, setEvent] = useState(new Date('2020', '10', '24', '20'));
     const [timeLeft, setTimeLeft] = useState(countdown(new Date(), event));
+
+    const executeScroll = () => props.scroll.current.scrollIntoView();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -27,7 +29,7 @@ const Banner = () => {
                 <div className="dolo">
                     <h2 data-text="wsu nexus">wsu nexus</h2>
                 </div>
-                <Button id="register">REGISTER</Button>
+                <Button id="register" onClick={executeScroll}>REGISTER</Button>
             </div>
             <div className="countdown">
                 <Digit time={timeLeft.days.toString()}/>

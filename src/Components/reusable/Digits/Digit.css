@@ -47,14 +47,25 @@
     transform: scale(1, 1.25);
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1300px) {
+    .digit-cont {
+        width: 10rem;
+        height: 12rem;
+        margin: 1rem;
+    }
+    .digit {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
     .digit-cont {
         width: 7rem;
         transition: width 4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .digit-cont {
         display: flex;
         height: 6rem;

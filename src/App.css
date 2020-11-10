@@ -5,7 +5,7 @@
   --color4: #121420;
   --accent1: #B76D68;
 
-  --logoBckgrd: ##05022b;
+  --logoBckgrd: #05022b;
   --logoBckgrdRGB: rgb(5,2,43);
   --logoWTopGradientRGB: rgb(38,206,218);
   --logoWBottomRGB: rgb(79,147,230);
@@ -23,12 +23,20 @@
   font-family: 'Audiowide', cursive;
 }
 
+body { 
+  background-color: #05022B;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   /* text-align: center; */
 
   font-family: 'Audiowide', cursive;
 
-  min-height: 90vh;
+  /* min-height: 90vh; */
   width: auto;
   background-color: #05022B;
 
@@ -36,11 +44,38 @@
   grid-template-columns: 1fr;
   grid-template-rows: 75px 1fr;
 
+  overflow: none;
+
 }
 
 .main {
   display: grid;
 
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .7fr .7fr .7fr 1fr;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.4);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(38,209,220,1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
 }

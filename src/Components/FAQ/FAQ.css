@@ -1,6 +1,6 @@
 .FAQ {
     margin: 1rem 5rem;
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .FAQ-accordians-cont {
@@ -17,3 +17,4 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
 }
+

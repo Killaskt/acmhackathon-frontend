@@ -1,4 +1,80 @@
+.schedule {
+    margin: 5rem 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-cont {
+    margin: 2rem 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.nav.nav-tabs {
+    width: 80vw;
+    height: max-content;
+    font-size: 1.5rem;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.nav-item.nav-link {
+    width: 40vw;
+    color: rgba(199,83,150,1);
+    background: rgba(7, 171, 183, 1);
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+}
+
 #schedule-tabs {
     height: min-content;
     width: min-content;
+}
+
+.tab-content {
+    width: 80vw;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    font-size: 2.5rem;
+    color: rgba(7, 171, 183, 1);
+    border: 4px solid rgba(199,83,150,1);
+    background: rgba(105, 62, 189, 1);
+    text-shadow: 1px 2px 5px rgba(0,0,0,1);
+
+    
+}
+
+.eventname {
+    border-right: 2px solid rgba(199,83,150,1);
+    padding-left: 1rem;
+}
+
+.eventtime {
+    border-left: 2px solid rgba(199,83,150,1);
+    padding-left: 1rem;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .nav.nav-tabs {
+        font-size: 1.25rem;
+    }
+
+    .event {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    .eventname {
+        border-right: 0px;
+    }
+    
+    .eventtime {
+        border-left: 0px;        
+    }
 }

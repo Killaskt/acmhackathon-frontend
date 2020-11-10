@@ -44,7 +44,7 @@
 
 h2 {
     /* color: white; */
-    font-size: 6vw;
+    font-size: 8vw;
     background-image: -webkit-linear-gradient(270deg,#613BBB 20%, #9F59CC 60%);
     /* text-shadow: 0px 0px 0px #4C63E6; */
     -webkit-background-clip: text;
@@ -85,7 +85,7 @@ h2::after {
     color: #24CAD5;
     -webkit-text-stroke: 1px #479AE3;
     text-shadow: 0 1px 2px rgb(0,0,0);
-    font-size: 30px;
+    font-size: 2.5rem;
     font-weight: 100;
     letter-spacing: 2px;
     padding: 0.2em;
@@ -115,13 +115,17 @@ h2::after {
 
 
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     h2 {
-        font-size: 450%;
+        font-size: 10vw;
     }
 
     .countdown {
         grid-template-columns: repeat(auto-fit, minmax(240px, .5fr));
+    }
+
+    #register {
+        font-size: 3.5vw;
     }
 
     .colons {
@@ -129,7 +133,10 @@ h2::after {
     }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .banner {
+        height: 90vh;
+    }
     .banner-mid {
         grid-template: 
         ". logo ." .1fr
@@ -137,6 +144,9 @@ h2::after {
     }
     h2 {
         font-size: 450%;
+    }
+    #register {
+        font-size: 2rem;
     }
 }
 

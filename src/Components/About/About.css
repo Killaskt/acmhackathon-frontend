@@ -16,6 +16,13 @@
     text-shadow: 1px 2px 1px rgba(0,0,0,1);
 }
 
+@media screen and (max-width: 600px) {
+    .about {
+        margin: 3rem 5rem;
+        /* height: 50vh; */
+    }
+}
+
 
 /*
     div digit color: rgba(254,106,180,1)
