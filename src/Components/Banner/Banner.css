@@ -136,6 +136,7 @@ h2::after {
 @media screen and (max-width: 600px) {
     .banner {
         height: 90vh;
+
     }
     .banner-mid {
         grid-template: 
@@ -143,10 +144,11 @@ h2::after {
         ". register ." .5fr / 1fr auto 1fr;
     }
     h2 {
-        font-size: 450%;
+        font-size: 600%;
     }
     #register {
         font-size: 2rem;
     }
+
 }
 

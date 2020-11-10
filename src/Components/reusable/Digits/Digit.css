@@ -78,3 +78,20 @@
         /* transform: scale(1, 1.25); */
     }
 }
+
+@media screen and (max-width: 600px) {
+    .digit-cont {
+        height: 8rem;
+        width: 9rem;
+        margin-bottom: 1rem;
+    }
+    .digit {
+        font-size: 5rem;
+        height: min-content;
+        /* transform: scale(1, 1.25); */
+    }
+
+    .digit-cont:nth-child(2) {
+        margin-left: 1.5rem;
+    }
+}
