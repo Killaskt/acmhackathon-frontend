@@ -106,7 +106,7 @@
     }
 }
   
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     .ribbon:nth-child(2) {
         margin-left: 2rem;
     }
@@ -120,6 +120,12 @@
     }
     .ribbon:nth-child(2) {
         margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .paths {
+        padding: 0rem 5rem 1rem;
     }
 }
 

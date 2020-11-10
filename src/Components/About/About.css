@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 600px) {
     .about {
-        margin: 3rem 5rem;
+        margin: 3rem 5rem 0rem;
         /* height: 50vh; */
     }
 }

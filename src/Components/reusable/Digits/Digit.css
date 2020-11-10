@@ -73,7 +73,7 @@
         transition: height 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     .digit {
-        font-size: 3rem;
+        font-size: 5rem;
         height: min-content;
         /* transform: scale(1, 1.25); */
     }
