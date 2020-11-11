@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion, Button, Card } from 'react-bootstrap';
 
-// import './Accord.css';
+import './Accord.css';
 
 const Accord = (props) => {
     return (

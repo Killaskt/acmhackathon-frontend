@@ -3,7 +3,7 @@ import {Alert, Button} from 'react-bootstrap';
 import {useForm} from 'react-hook-form';
 import axios from 'axios';
 
-// import './RegForm.css';
+import './RegForm.css';
 
 const RegForm = (props) => {
     // const [myErrors, setMyErrors] = useState();

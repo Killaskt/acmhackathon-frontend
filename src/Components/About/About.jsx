@@ -1,7 +1,8 @@
 import React from 'react'
 
 import Title from './../reusable/Title/Title';
-// import './About.css';
+
+import './About.css';
 
 const About = () => {
     return(

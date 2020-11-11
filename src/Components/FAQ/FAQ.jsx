@@ -3,7 +3,7 @@ import React from 'react'
 import Title from './../reusable/Title/Title';
 import Accord from './../reusable/Accord/Accord';
 
-// import './FAQ.css';
+import './FAQ.css';
 
 const FAQ = () => {
     return (
