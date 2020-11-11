@@ -2,7 +2,7 @@ import React from 'react'
 
 import Title from './../reusable/Title/Title';
 
-import './Paths.css';
+// import './Paths.css';
 
 const Paths = () => {
     return (

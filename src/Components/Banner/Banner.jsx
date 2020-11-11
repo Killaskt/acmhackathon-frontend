@@ -5,7 +5,7 @@ import {Button} from 'react-bootstrap';
 
 import Digit from './../reusable/Digits/Digit';
 
-import './Banner.css';
+import './Banner-mobile.css';
 
 const Banner = (props) => {
     const [time, setTime] = useState(new Date());

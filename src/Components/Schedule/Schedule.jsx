@@ -3,7 +3,7 @@ import { Card, Nav, Tab, Tabs } from 'react-bootstrap';
 
 import Title from './../reusable/Title/Title';
 
-import './Schedule.css';
+// import './Schedule.css';
 
 const Schedule = () => {
     const [key, setKey] = useState();

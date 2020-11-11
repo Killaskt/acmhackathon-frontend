@@ -8,7 +8,7 @@ import logo from './logo.svg';
 import Main from './Components/Main/Main'
 import Nav from './Components/Nav/Nav'
 
-import './App.css';
+// import './App.css';
 
 function App() {
   return (

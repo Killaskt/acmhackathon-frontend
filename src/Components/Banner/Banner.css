@@ -114,7 +114,7 @@ h2::after {
 }
 
 
-
+/* 
 @media screen and (max-width: 1200px) {
     h2 {
         font-size: 12vw;
@@ -150,5 +150,5 @@ h2::after {
         font-size: 2rem;
     }
 
-}
+} */
 
