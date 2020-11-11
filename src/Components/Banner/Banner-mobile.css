@@ -1,3 +1,21 @@
+.banner {
+    height: 70vh;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr auto;
+
+}
+
+.banner-mid {
+    padding-top: 2em;
+    display: grid;
+    grid-template:
+    ". logo ." .5fr 
+    ". register ." .3fr / 1fr auto 1fr;
+
+    /* margin-bottom: 2em; */
+}
+
 .dolo {
     grid-area: logo;
     /* background-color: #4C63E6; */
@@ -12,7 +30,7 @@
 
 h2 {
     /* color: white; */
-    font-size: 8vw;
+    font-size: 10em;
     background-image: -webkit-linear-gradient(270deg,#613BBB 20%, #9F59CC 60%);
     /* text-shadow: 0px 0px 0px #4C63E6; */
     -webkit-background-clip: text;
