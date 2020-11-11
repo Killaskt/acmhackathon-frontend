@@ -12,7 +12,11 @@ import Nav from './Components/Nav/Nav'
 
 function App() {
   return (
-    <div className="App">
+    <div 
+        className="App" 
+        style={{
+          minHeight:"100vh"
+        }}>
       <Nav />
       <Switch>
         <Route path='/' component={Main}/>

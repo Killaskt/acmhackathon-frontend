@@ -36,9 +36,9 @@ html {
 
   font-family: 'Audiowide', cursive;
 
-  /* min-height: 90vh; */
+  min-height: 100vh;
   /* max-width: auto; */
-  width: 100%;
+  width: 100vw;
   background-color: #05022B;
 
   display: grid;
@@ -52,29 +52,29 @@ html {
 .main {
   /* display: grid; */
 
-  width: 100%;
+  /* width: 100%; */
 
   /* grid-template-columns: 1fr;
   grid-template-rows: 1fr .7fr .7fr .7fr 1fr; */
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  /* width: 5px; */
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.4);
+  /* background: rgba(0,0,0,0.4); */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(38,209,220,1);
+  /* background: rgba(38,209,220,1); */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  /* background: #555; */
 }
 
 /* @media (max-width: 800px) {
