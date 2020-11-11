@@ -17,7 +17,7 @@ function App() {
         style={{
           minHeight:"100vh"
         }}>
-      <Nav />
+      {/* <Nav /> */}
       <Switch>
         <Route path='/' component={Main}/>
       </Switch>

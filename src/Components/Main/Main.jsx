@@ -15,9 +15,9 @@ const Main = () => {
         <div className="main">
             <Banner scroll={scrollRef}/>
             <About/>
-            {/* <Paths/> */}
+            <Paths/>
             <FAQ/>
-            <Schedule />
+            {/* <Schedule /> */}
             <RegForm scroll={scrollRef}/>
         </div>
     )

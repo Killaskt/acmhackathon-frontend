@@ -38,7 +38,7 @@ html {
 
   min-height: 100vh;
   /* max-width: auto; */
-  width: 100vw;
+  max-width: 100vw;
   background-color: #05022B;
 
   display: grid;
@@ -50,12 +50,12 @@ html {
 }
 
 .main {
-  /* display: grid; */
+  display: grid;
 
-  /* width: 100%; */
+  width: 100%;
 
-  /* grid-template-columns: 1fr;
-  grid-template-rows: 1fr .7fr .7fr .7fr 1fr; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .7fr .7fr .7fr 1fr;
 }
 
 ::-webkit-scrollbar {
