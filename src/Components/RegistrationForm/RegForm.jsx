@@ -62,7 +62,7 @@ const RegForm = (props) => {
                     <div className="Hlogo"></div>
                 </div>
                 <div className="right">
-                    <h2 style={{fontSize: '3rem'}}>REGISTER</h2>
+                    <h3>REGISTER</h3>
                     <div className="register">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="form-cont">
