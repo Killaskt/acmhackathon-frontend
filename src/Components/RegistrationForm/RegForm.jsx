@@ -13,7 +13,7 @@ const RegForm = (props) => {
 
     const err = (e) => Object.values(e).map((d,i) => <li key={i}>{d.message}</li>)
     
-    const onSubmit = data => {        
+    const onSubmit = async data => {        
         try {
 
             if (!data.Email) {
@@ -24,6 +24,7 @@ const RegForm = (props) => {
                 headers: {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*'
+                    // 'Access-Control-Allow-Headers': '*'
                 }
             }
 
@@ -41,8 +42,8 @@ const RegForm = (props) => {
                 Skills: data.Skills ? data.Skills : '',
                 Random: data.RandomTeam ? data.RandomTeam : 0
             }
-
-            axios.post(link, body, config)
+            console.log(config)
+            await axios.post(link, body, config)
             .then((data) => {
                 console.log('success', data)
             })
@@ -78,9 +79,9 @@ const RegForm = (props) => {
                                 <textarea className="reg-input" name="Skills" placeholder="Skills (comma separated)" ref={register} />
                                 <label for="Random Team">Random Team</label>
                                 <div className="randomteam">
-                                    <input id="rand-yes" name="RandomTeam" type="radio" value="Yes" ref={register}/>
+                                    <input id="rand-yes" name="RandomTeam" type="radio" value="1" ref={register}/>
                                     <label for="rand-yes">Yes</label>
-                                    <input id="rand-no" name="RandomTeam" type="radio" value=" No" ref={register}/>
+                                    <input id="rand-no" name="RandomTeam" type="radio" value=" 0" ref={register}/>
                                     <label for="rand-no">No</label>
                                 </div>
                                 <div className="error">

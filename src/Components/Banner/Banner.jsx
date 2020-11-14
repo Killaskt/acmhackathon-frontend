@@ -16,7 +16,6 @@ const Banner = (props) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log(countdown(new Date(), event));
             setTimeLeft(countdown(new Date(), event));
         }, 1000)
 

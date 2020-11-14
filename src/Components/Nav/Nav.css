@@ -70,3 +70,20 @@
     background-size: 45%;
     background-position: left;
 }
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+    .brand {
+        background-size: 50%;
+    }
+
+    .acm {
+        background-size: 60%;    
+    }
+    
+    .wsu {
+        background-size: 70%;
+    }
+}
