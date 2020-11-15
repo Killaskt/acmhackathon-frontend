@@ -24,11 +24,10 @@ const RegForm = (props) => {
                 headers: {
                     'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*'
-                    // 'Access-Control-Allow-Headers': '*'
                 }
             }
 
-            const link = 'https://tkzjb7ri13.execute-api.us-east-2.amazonaws.com/prod/members';
+            const link = 'https://c2rug2aa9i.execute-api.us-east-2.amazonaws.com/prod/members';
 
             const body = {
                 Email: data.Email,
