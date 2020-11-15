@@ -39,6 +39,7 @@ const RegForm = (props) => {
                 Major: data.Major ? data.Major : '',
                 Grade: data.Grade ? data.Grade : '',
                 Age: data.Age ? data.Age : '',
+                Age: data.Gender ? data.Gender : '',
                 Skills: data.Skills ? data.Skills : '',
                 Random: data.RandomTeam ? data.RandomTeam : 0
             }
@@ -73,6 +74,7 @@ const RegForm = (props) => {
                                 </div>
                                 <input className="reg-input" type="text" placeholder="AccessID" name="AccessID" ref={register({required: 'Wayne State AccessID required', min: 6, pattern: {value: /([a-z]|[A-Z])([a-z]|[A-Z])\d\d\d\d/gi, message: 'Not a valid Access ID'}})} />
                                 <input className="reg-input" type="text" placeholder="Age" name="Age" ref={register({required: 'Age Required', min: 0, pattern: {value: /([1][8-9]|[2-9][0-9])/gi, message: 'you must be over 18'} })} />
+                                <input className="reg-input" type="text" placeholder="Gender" name="Gender" ref={register} />
                                 <input className="reg-input" type="text" placeholder="School" name="School" ref={register} />
                                 <input className="reg-input" type="text" placeholder="Grade" name="Grade" ref={register} />
                                 <input className="reg-input" type="text" placeholder="Major" name="Major" ref={register} />

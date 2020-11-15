@@ -32,9 +32,7 @@ const Banner = (props) => {
             </div>
             <div className="countdown">
                 <Digit time={timeLeft.days.toString()}/>
-                <h4 className="colons">:</h4>
                 <Digit time={timeLeft.minutes.toString()}/>
-                <h4 className="colons">:</h4>
                 <Digit time={timeLeft.seconds.toString()}/>
             </div>
             

@@ -53,8 +53,8 @@
 @media screen and (min-width: 520px) {
     .digit-cont {
         margin: 0.1rem 0.5em;
-        height: 5rem;
-        width: 4rem;
+        height: 10rem;
+        width: 8rem;
         /* max-width: 120px; */
     
         background: rgba(254,106,180,1);
@@ -67,7 +67,7 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
+        font-size: 8rem;
         transform: scale(1, 1.25);
         margin: 0;
     }
