@@ -13,7 +13,7 @@ const Q_A = [
     },
     {
         "Question": "How many people can be on a Team?", 
-        "Answer": "The max a team can have is anything up to 3 people! At least one team member needs to be a Wayne State Student.", 
+        "Answer": "The max a team can have is anything up to 3 people! At least one team member needs to be a Wayne State Student. Teams help you learn how to delegate work and also share code amongst each other so its highly encouraged!", 
     },
     {
         "Question": "Do i need a Team?", 
