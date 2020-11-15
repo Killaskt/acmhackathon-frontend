@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Alert, Button} from 'react-bootstrap';
 import {useForm} from 'react-hook-form';
 import axios from 'axios';
@@ -9,7 +9,21 @@ const RegForm = (props) => {
     // const [myErrors, setMyErrors] = useState();
     const {register, handleSubmit, errors} = useForm();
 
+    const [success, setSuccess] = useState(0);
+
     // const onSubmit = data => console.log(data);
+
+    const variants = {
+        0: "info",
+        1: "success",
+        2: "danger"
+    }
+
+    const textVariant = {
+        0: "Submit",
+        1: "Submitted!",
+        2: "Email Already Exists!"    
+    }
 
     const err = (e) => Object.values(e).map((d,i) => <li key={i}>{d.message}</li>)
     
@@ -42,18 +56,24 @@ const RegForm = (props) => {
                 Skills: data.Skills ? data.Skills : '',
                 Random: data.RandomTeam ? data.RandomTeam : 0
             }
-            console.log(config)
             await axios.post(link, body, config)
             .then((data) => {
-                console.log('success', data)
+                console.log('success!', data)
+                setSuccess(1);
+                setTimeout(() => setSuccess(0), 1000);
             })
             .catch((err) => {
                 console.log('Error', err)
+                setSuccess(2);
+                setTimeout(() => setSuccess(0), 1000);
             })
         } catch (err) {
-            console.log(err);
+            console.log('Error in try', err);
         }  
     }
+
+    useEffect(() => {
+    }, [success]);
 
     return (
         <div ref={props.scroll} className="reg-form">
@@ -96,7 +116,9 @@ const RegForm = (props) => {
                                         <></>
                                     }
                                 </div>
-                                <Button type="submit" variant="info">Submit</Button>
+                                <Button type="submit" variant={variants[success]}>
+                                    {textVariant[success]}
+                                </Button>
                             </div>
                         </form>
                     </div>
