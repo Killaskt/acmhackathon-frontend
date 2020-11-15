@@ -1,7 +1,11 @@
 .schedule {
-    margin: 5rem 5rem 3rem;
+    /* margin: 5rem 5rem 3rem; */
     display: flex;
     flex-direction: column;
+}
+
+.schedule .Title-cont {
+    margin: 0 5rem;
 }
 
 .schedule-cont {

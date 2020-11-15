@@ -17,7 +17,7 @@ const Main = () => {
             <About/>
             <Paths/>
             <FAQ/>
-            {/* <Schedule /> */}
+            <Schedule />
             <RegForm scroll={scrollRef}/>
         </div>
     )

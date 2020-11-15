@@ -55,7 +55,7 @@ html {
   width: 100%;
 
   grid-template-columns: 1fr;
-  grid-template-rows: 1.1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr .7fr 1fr .7fr .7fr;
 }
 
 ::-webkit-scrollbar {
@@ -79,12 +79,12 @@ html {
 
 @media (max-width: 800px) {
   .main {
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr .7fr 1fr .7fr .7fr;
   }
 }
 
 @media screen and (max-width: 600px) {
   .main {
-    grid-template-rows: 1fr .7fr .6fr .7fr 1fr;
+    grid-template-rows: 1fr .7fr .6fr .7fr .7fr;
   }
 }
