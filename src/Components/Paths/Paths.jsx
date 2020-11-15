@@ -7,7 +7,7 @@ import './Paths.css';
 const Paths = () => {
     return (
         <div className="paths">
-            <Title Title={'Paths'} />
+            <Title Title={'Paths'}/>
             <div className="path-cont">
                 <div className="ribbon">
                     <div className="ribbon-header">UI/UX</div>

@@ -16,10 +16,11 @@
     text-shadow: 1px 2px 1px rgba(0,0,0,1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
     .about {
         margin: 3rem 5rem 0rem;
-        /* height: 50vh; */
+        height: 500px;
+        min-height: 400px;
     }
 }
 

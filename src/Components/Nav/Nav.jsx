@@ -5,10 +5,8 @@ import './Nav.css';
 
 const Nav = () => {
     return (
-        <div className="nav">
-            <div className="brand">
-                {/* WSU Nexus */}
-            </div>
+        <div className="navi">
+            <div className="brand"></div>
             <div className="date-cont">
                 <div className="date">
                     Date: <span>11/24 8:00pm</span> - <span>11/25 8:00pm</span> 
