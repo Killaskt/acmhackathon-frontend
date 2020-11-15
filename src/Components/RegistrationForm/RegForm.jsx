@@ -58,12 +58,12 @@ const RegForm = (props) => {
             }
             await axios.post(link, body, config)
             .then((data) => {
-                console.log('success!', data)
+                console.log('success!')
                 setSuccess(1);
                 setTimeout(() => setSuccess(0), 1000);
             })
             .catch((err) => {
-                console.log('Error', err)
+                console.log('Error')
                 setSuccess(2);
                 setTimeout(() => setSuccess(0), 1000);
             })
