@@ -38,7 +38,7 @@ const RegForm = (props) => {
                 Major: data.Major ? data.Major : '',
                 Grade: data.Grade ? data.Grade : '',
                 Age: data.Age ? data.Age : '',
-                Age: data.Gender ? data.Gender : '',
+                Gender: data.Gender ? data.Gender : '',
                 Skills: data.Skills ? data.Skills : '',
                 Random: data.RandomTeam ? data.RandomTeam : 0
             }
