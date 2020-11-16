@@ -21,7 +21,7 @@ const RegForm = (props) => {
 
     const textVariant = {
         0: "Submit",
-        1: "Submitted!",
+        1: "Submitted, check your email!",
         2: "Email Already Exists!"    
     }
 
@@ -60,12 +60,11 @@ const RegForm = (props) => {
             .then((data) => {
                 console.log('success!')
                 setSuccess(1);
-                setTimeout(() => setSuccess(0), 1000);
             })
             .catch((err) => {
                 console.log('Error')
                 setSuccess(2);
-                setTimeout(() => setSuccess(0), 1000);
+                setTimeout(() => setSuccess(0), 2000);
             })
         } catch (err) {
             console.log('Error in try', err);
@@ -116,9 +115,15 @@ const RegForm = (props) => {
                                         <></>
                                     }
                                 </div>
-                                <Button type="submit" variant={variants[success]}>
-                                    {textVariant[success]}
-                                </Button>
+                                {success === 1 ? 
+                                    <Button disabled type="submit" variant={variants[success]}>
+                                        {textVariant[success]}
+                                    </Button>
+                                    :
+                                    <Button type="submit" variant={variants[success]}>
+                                        {textVariant[success]}
+                                    </Button>
+                                }
                             </div>
                         </form>
                     </div>
