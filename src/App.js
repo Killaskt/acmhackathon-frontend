@@ -7,6 +7,7 @@ import logo from './logo.svg';
 
 import Main from './Components/Main/Main'
 import Nav from './Components/Nav/Nav'
+import CodeOfConduct from './Components/Code_of_Conduct/Code_of_Conduct'
 
 // import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
       <Nav />
       <Switch>
         <Route path='/' component={Main}/>
+        <Route path='/code-of-conduct' component={CodeOfConduct}/>
       </Switch>
     </div>
   );
