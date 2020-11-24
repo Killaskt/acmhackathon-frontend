@@ -21,7 +21,7 @@ function App() {
       <Nav />
       <Switch>
         <Route path='/' component={Main}/>
-        <Route path='/code-of-conduct' component={CodeOfConduct}/>
+        <Route path='/codeofconduct' component={CodeOfConduct}/>
       </Switch>
     </div>
   );
