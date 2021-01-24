@@ -1,90 +1,21 @@
-:root {
-  --color1: #403F4C;
-  --color2: #2C2B3C;
-  --color3: #1B2432;
-  --color4: #121420;
-  --accent1: #B76D68;
-
-  --logoBckgrd: #05022b;
-  --logoBckgrdRGB: rgb(5,2,43);
-  --logoWTopGradientRGB: rgb(38,206,218);
-  --logoWBottomRGB: rgb(79,147,230);
-  --logoWordGradientTopRGB: rgb(50,36,175);
-  --logoWordGradientBottomRGB: rgb(198,108,214);
-  --logoWordShadowRGB: rgb(83 113 255);
-
-}
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
-  font-family: 'Audiowide', cursive;
 }
 
-body { 
-  background-color: #05022B;
-}
-
-html {
-  scroll-behavior: smooth;
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
 }
 
 .App {
-  /* text-align: center; */
-
-  font-family: 'Audiowide', cursive;
-
-  min-height: 100vh;
-  /* max-width: auto; */
-  max-width: 100vw;
-  background-color: #05022B;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 75px 1fr;
-
-  /* overflow: none; */
-
+  font-family: 'Barlow', sans-serif;
 }
 
 .main {
   display: grid;
+  min-height: 100%; 
 
-  width: 100%;
-
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.1fr .8fr .8fr .8fr .8fr;
-}
-
-::-webkit-scrollbar {
-  /* width: 5px; */
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  /* background: rgba(0,0,0,0.4); */
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  /* background: rgba(38,209,220,1); */
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  /* background: #555; */
-}
-
-@media (max-width: 800px) {
-  .main {
-    grid-template-rows: 1fr .7fr 1fr .7fr .7fr;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .main {
-    grid-template-rows: 1fr .7fr .6fr .7fr .7fr;
-  }
+  grid-template-columns: .8fr 1fr;
+  grid-template-rows: 1fr;
 }

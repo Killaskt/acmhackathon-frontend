@@ -1,25 +1,14 @@
-import React from 'react'
-import {
-  Switch,
-  Route
-} from 'react-router-dom'
-import logo from './logo.svg';
+import React from 'react';
+import {Route, Switch} from 'react-router-dom';
 
-import Main from './Components/Main/Main'
-import Nav from './Components/Nav/Nav'
+import Main from './Components/Main/Main.jsx';
+import './App.css';
 
-// import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div 
-        className="App" 
-        style={{
-          minHeight:"100vh"
-        }}>
-      <Nav />
+    <div className="App">
       <Switch>
-        <Route path='/' component={Main}/>
+        <Route path="/" component={Main}/>
       </Switch>
     </div>
   );
