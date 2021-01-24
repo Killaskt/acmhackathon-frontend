@@ -1,8 +1,18 @@
 import React from 'react';
+import {Redirect, Route, Link} from 'react-router-dom';
 
 import './Right.css';
 
 const Right = () => {
+
+    // https://tripetto.app/run/MKFAENRMQ8
+
+    const participationRedirect = () => {
+        return (
+            <Link to={{ pathname: "https://tripetto.app/run/MKFAENRMQ8" }} target="_blank" />
+            // <Redirect to="/participationform/" />
+        )
+    }
 
     return (
         <div className="Right">
@@ -13,7 +23,7 @@ const Right = () => {
             <div className="form-cont">
                 <h3>REGISTER:</h3>
                 <div className="form-buttons">
-                    <button className="btn Participant">PARTICIPANT</button>
+                    <button className="btn Participant"><a target="_blank" href="https://tripetto.app/run/MKFAENRMQ8">PARTICIPANT</a></button>
                     <button className="btn Volunteer">VOLUNTEER</button>
                     <button className="btn Mentor">MENTOR</button>
                 </div>

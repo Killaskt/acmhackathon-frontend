@@ -104,6 +104,11 @@
     letter-spacing: 1px;
 }
 
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* .track-circle{
     position:relative;
     width:50%;

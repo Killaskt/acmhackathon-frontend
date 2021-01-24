@@ -9,6 +9,10 @@ const App = () => {
     <div className="App">
       <Switch>
         <Route path="/" component={Main}/>
+        <Route path='/participationform' component={() => { 
+                window.location.href = 'https://tripetto.app/run/MKFAENRMQ8'; 
+                return null;
+           }}/>
       </Switch>
     </div>
   );
