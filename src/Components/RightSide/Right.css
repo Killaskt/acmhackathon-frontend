@@ -1,0 +1,121 @@
+.Right {
+    display: grid;
+
+    color: #F1F1F1;
+    background: rgba(0,0,0,0.88);
+
+    grid-template-rows: 1fr .7fr .7fr;
+    grid-template-columns: 1fr;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h2 {
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.intro h4 {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.form-cont, .track-cont {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+}
+
+.form-cont h3, .track-cont h3 {
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+.form-buttons, .tracks {
+    display: flex;
+    height: min-content;
+    justify-content: space-evenly;
+}
+
+.Right .form-buttons .btn {
+    pointer-events: auto;
+    font-weight: 900;
+    font-style: italic;
+    color: #707070;
+    font-size: 17px;
+    letter-spacing: 1px;
+    min-height: 120%;
+    min-width: 27%;
+    padding: .6rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    transition: box-shadow 1000ms linear;
+    transition: background-color 100ms linear;
+}
+
+.Right .form-buttons .btn:hover {
+    transition: box-shadow 100ms linear;
+    background: rgba(180, 179, 179, 0.986);
+    color: white;
+    box-shadow: -8px 7px rgba(65, 64, 64, 0.541);
+}
+
+.tracks {
+    /* min-height: 20px; */
+    /* width: 100%; */
+}
+
+.track-circle {
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    background: rgba(255,255,255,0);
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 0px 4px white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.track-circle i {
+    /* color: black; */
+    /* position: absolute; */
+    font-size: 4rem;
+    /* margin: 0 auto; */
+}
+
+.track-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+/* .track-circle{
+    position:relative;
+    width:50%;
+    padding-bottom:50%;
+    background:gold;
+    border-radius:50%;
+  } */
+
+/* .track-circle h3 i{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    color: black;
+  } */

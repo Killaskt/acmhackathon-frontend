@@ -1,24 +1,17 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
-import Banner from '../Banner/Banner';
-import About from '../About/About';
-import Paths from '../Paths/Paths'
-import FAQ from '../FAQ/FAQ';
-import Schedule from '../Schedule/Schedule'
-import RegForm from '../RegistrationForm/RegForm.jsx'
+import Left from './../LeftSide/Left.jsx';
+import Right from './../RightSide/Right.jsx';
 
-import '../../App.css';
+import './Main.css';
 
 const Main = () => {
-    const scrollRef = useRef(null);
+
     return (
         <div className="main">
-            <Banner scroll={scrollRef}/>
-            <About/>
-            <Paths/>
-            <FAQ/>
-            <Schedule />
-            <RegForm scroll={scrollRef}/>
+            <Left />
+            <div></div>
+            <Right />
         </div>
     )
 }
