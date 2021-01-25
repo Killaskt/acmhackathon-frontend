@@ -86,6 +86,13 @@
 } */
 
 
+.Right .form-buttons .btn:hover {
+    transition: box-shadow 100ms linear;
+    background: rgba(180, 179, 179, 0.986);
+    color: white;
+    box-shadow: -8px 7px rgba(65, 64, 64, 0.541);
+}
+
 .tracks {
     /* min-height: 20px; */
     /* width: 100%; */
