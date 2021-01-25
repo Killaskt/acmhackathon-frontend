@@ -23,9 +23,9 @@ const Right = () => {
             <div className="form-cont">
                 <h3>REGISTER:</h3>
                 <div className="form-buttons">
-                    <button className="btn Participant"><a target="_blank" href="https://tripetto.app/run/MKFAENRMQ8">PARTICIPANT</a></button>
-                    <button className="btn Volunteer">VOLUNTEER</button>
-                    <button className="btn Mentor">MENTOR</button>
+                    <div className="btn Particpant"><a target="_blank" href="https://tripetto.app/run/MKFAENRMQ8">PARTICIPANT</a></div>
+                    <div className="btn Volunteer"><a target="_blank" href="https://forms.gle/bYBLZM1DW4HqGND18">VOLUNTEER</a></div>
+                    <div className="btn Mentor"><a target="_blank" href="https://forms.gle/bYBLZM1DW4HqGND18">MENTOR</a></div>
                 </div>
             </div>
             <div className="track-cont">
