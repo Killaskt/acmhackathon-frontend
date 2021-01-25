@@ -34,7 +34,8 @@ const Right = () => {
                     <div className="track-circle">
                         <div className="track-inner">
                             <i class="fas fa-fist-raised"></i>
-                            <p>Justice</p>
+                            <p>Social</p>
+                            <p>Impact</p>
                         </div>
                     </div>
                     <div className="track-circle">
