@@ -30,6 +30,11 @@
     
 }
 
+.header-text p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 .header-text h2, .header-text h4 {
     
 }

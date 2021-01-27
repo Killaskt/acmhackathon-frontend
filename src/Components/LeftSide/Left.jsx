@@ -14,6 +14,7 @@ const Left = () => {
             <div className="header-text">
                 <h1 className="first">WSU</h1>
                 <h1 className="second">NEXUS</h1>
+                <p>Open to all HS and college students</p>
             </div>
         </div>
     )

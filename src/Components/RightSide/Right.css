@@ -4,7 +4,7 @@
     color: #F1F1F1;
     background: rgba(0,0,0,0.88);
 
-    grid-template-rows: .5fr 2.4fr;
+    grid-template-rows: .4fr 2.4fr;
     grid-template-columns: 1fr;
 }
 
@@ -14,7 +14,7 @@
     color: #F1F1F1;
 
     grid-template-columns: 1fr;
-    grid-template-rows: .7fr .9fr .7fr .3fr 1fr 1fr;
+    grid-template-rows: .9fr .9fr .7fr 2fr 1fr 1fr;
 
 }
 

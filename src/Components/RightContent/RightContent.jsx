@@ -19,27 +19,41 @@ const RightContent = () => {
         title: "FAQ",
         rows: [
             {
-                title: "Lorem ipsum dolor sit amet,",
-                content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-                  ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-                  In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-                  Fusce sed commodo purus, at tempus turpis.`,
+                title: "Why Join a Hackathon?",
+                content: `Hackathons are a place for beginners to try and test new technologies, while they are also great places for professionals to challenge themselves to build architecturally and/or theoretically applications. They are a playground for developers to really learn and dive into technologies they hear name-dropped all the time.`,
             },
             {
-                title: "Nunc maximus, magna at ultricies elementum",
+                title: "How many people can be on a Team?",
                 content:
-                    "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+                    "The max number of people on a team is 4 people! The team must be made up of high school or college students from anywhere. Teams help you learn how to delegate work and also share code amongst each other so its highly encouraged!",
             },
             {
-                title: "Curabitur laoreet, mauris vel blandit fringilla",
-                content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-                Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-                Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-                Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+                title: "Do I need a team?",
+                content: `No. You can work on a project alone, but if you can also come with a team or (if you message an organizer or mark "Willing to join a Random Team" then one can be organized for you!`,
             },
             {
-                title: "What is the package version",
-                content: <p>current version is 1.2.1</p>,
+                title: "What is the registration process?",
+                content: `After filling out the registration form, an email will come to your inbox that has the discord link in order for you to join the server!`,
+            },
+            {
+                title: "What is the medium of the event?",
+                content: <p>The entire event will take place on Discord, Devpost (to submit projects) and maybe Zoom! From opening to closing ceremony! Discord is an amazing space to message, direct message, or even voice chat! Feel free to download discord at their website, <a href="https://discord.com/download">HERE</a>.</p>,
+            },
+            {
+                title: "How much does it cost?",
+                content: `Absolutely Nothing! Keep in mind though, you must be a wayne state student or have a wayne state student in your group.`,
+            },
+            {
+                title: "Who can attend?",
+                content: <p>This hackathon is open to all high school and college students!</p>,
+            },
+            {
+                title: "How does mentoring work?",
+                content: 'We have a small team of volunteers that will be available for any questions that you may have while working on your project. Our team has a broad scope from React to Endpoints to AWS to Pandas to Tensorflow and more!',
+            },
+            {
+                title: "What if I'm a beginner?",
+                content: 'Hackathons are the greatest places to grow, learn, and develop whether you are a beginner or a programmer in the field. They allow you to hone your creativeness while pushing you to succeed at a certain deadline!',
             },
         ],
     };
