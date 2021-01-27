@@ -9,7 +9,7 @@ import { Col, Row, Tab, Nav, Sonnet } from 'react-bootstrap';
 const Q_A = [
     {
         "Question": "What is a hackathon?", 
-        "Answer": "Pretty much the coolest thing ever. Hackathons foster a sense of community, drive innovation, and build the technical leaders of the future. Here at HackPSU, our goal is to create a collaborative environment where people can both innovate and learn new skills", 
+        "Answer": "Pretty much the coolest thing ever. Hackathons foster a sense of community, drive innovation, and build the technical leaders of the future. Our goal is to create a collaborative environment where people can both innovate and learn new skills", 
     },
     {
         "Question": "How many people can be on a Team?", 
