@@ -41,7 +41,7 @@ const RightContent = () => {
             },
             {
                 title: "How much does it cost?",
-                content: `Absolutely Nothing! Keep in mind though, you must be a wayne state student or have a wayne state student in your group.`,
+                content: `Absolutely Nothing!.`,
             },
             {
                 title: "Who can attend?",
