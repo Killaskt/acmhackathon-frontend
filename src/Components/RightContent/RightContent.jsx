@@ -55,6 +55,10 @@ const RightContent = () => {
                 title: "What if I'm a beginner?",
                 content: 'Hackathons are the greatest places to grow, learn, and develop whether you are a beginner or a programmer in the field. They allow you to hone your creativeness while pushing you to succeed at a certain deadline!',
             },
+            {
+                title: "Will there be prizes?",
+                content: 'TBA!',
+            },
         ],
     };
     
@@ -62,6 +66,7 @@ const RightContent = () => {
         bgColor: 'rgba(31, 31, 31, 1)',
         titleTextColor: "white",
         rowTitleColor: "white",
+        rowTitleTextSize: '1.1em',
         rowContentColor: 'white',
         arrowColor: "white",
     };
