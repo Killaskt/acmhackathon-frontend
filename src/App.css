@@ -39,3 +39,9 @@ html, body, #root, .App {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+@media screen and (max-width: 700px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
