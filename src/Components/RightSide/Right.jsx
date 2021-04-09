@@ -10,7 +10,7 @@ const Right = () => {
         <div className="Right">
             <div className="top">
                 <h4>Day of the Event:</h4>
-                <h4>April 9th (6:00pm) - April 11th (6:00pm)</h4>
+                <h4>May 21st (6:00pm) - May 23th (6:00pm)</h4>
             </div>
             <div className="intro">
                 <h2>A Wayne State Tech Hackathon</h2>
