@@ -18,9 +18,12 @@ function App() {
           minHeight:"100vh"
         }}>
       <Nav />
+    /*
+      Test for different project, just needed to test on a hosted site
       <video width="640" height="480" controls>
         <source src="./Assets/first.h264" />
       </video>
+      */
       <Switch>
         <Route path='/' component={Main}/>
       </Switch>
